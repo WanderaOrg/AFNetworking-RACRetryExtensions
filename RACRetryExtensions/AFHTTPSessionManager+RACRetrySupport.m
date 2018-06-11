@@ -185,7 +185,7 @@ NSTimeInterval const RACDefaultTimeInterval = 10.0;
         }
         else
         {
-            [subscriber sendNext:RACTuplePack(responseObject, response)];
+            [subscriber sendNext:responseObject];
             [subscriber sendCompleted];
         }
     }];
